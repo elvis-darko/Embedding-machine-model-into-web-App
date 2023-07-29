@@ -1,5 +1,5 @@
 ## Description 
- In this project, I create a machine learning model from a given dataset. Also, I will create an API that will interact with the machine learning model. Finally, I will containerize my application with a docker
+ In this project, I create a machine learning model from a given dataset. Also, I will create an API using FastAPI. The App will interact with the machine learning model. Finally, I will containerize my application with a docker.
 
 
 | Code      | Name        | Published Article |  Deployed App |
