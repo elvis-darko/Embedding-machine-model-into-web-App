@@ -1,6 +1,10 @@
 ## Description 
  In this project, I create a machine learning model from a given dataset. Also, I will create an API using FastAPI. The App will interact with the machine learning model. Finally, I will containerize my application with a docker.
 
+[![python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+[![MIT licensed](https://img.shields.io/badge/license-mit-blue?style=for-the-badge&logo=appveyor)](./LICENSE)
+![Python](https://img.shields.io/badge/python-3.9-blue.svg)
+
 
 | Code      | Name        | Published Article |  Deployed App |
 |-----------|-------------|:-------------|:------|
