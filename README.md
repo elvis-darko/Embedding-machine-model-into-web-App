@@ -12,7 +12,7 @@
 | P 6     | Embedding ML model into web application| Medium<br />LinkedIn| |
 
 
-## Screenshot of App Deployed on Hugging Face
+## Screenshot of Deployed App
 
 
 
