@@ -23,7 +23,7 @@ This is a summary of the information contained in the data<br />
 `BD2`: Blood Work Result-4 (mu U/ml)<br />
 `Age`: patients age (years)<br />
 `Insurance`: If a patient holds a valid insurance card<br />
-`Sepsis`: Positive: if a patient in ICU will develop a sepsis , and Negative: otherwis<br />
+`Sepsis`: **Positive**: if a patient in ICU will develop a sepsis , and **Negative**: otherwis<br />
 
 
 ## Screenshot of Deployed App
