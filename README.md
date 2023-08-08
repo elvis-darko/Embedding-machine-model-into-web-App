@@ -13,17 +13,17 @@
 
 ## Note on Data
 This is a summary of the information contained in the data
-`ID`: number to represent patient ID
-`PRG`: Plasma glucose
-`PL`: Blood Work Result-1 (mu U/ml)
-`PR`: Blood Pressure (mm Hg)
-`SK`: Blood Work Result-2 (mm)
-`TS`: Blood Work Result-3 (mu U/ml)
-`M11`: Body mass index (weight in kg/(height in m)^2
-`BD2`: Blood Work Result-4 (mu U/ml)
-`Age`: patients age (years)
-`Insurance`: If a patient holds a valid insurance card
-`Sepsis`: Positive: if a patient in ICU will develop a sepsis , and Negative: otherwis
+`ID`: number to represent patient ID<br />
+`PRG`: Plasma glucose<br />
+`PL`: Blood Work Result-1 (mu U/ml)<br />
+`PR`: Blood Pressure (mm Hg)<br />
+`SK`: Blood Work Result-2 (mm)<br />
+`TS`: Blood Work Result-3 (mu U/ml)<br />
+`M11`: Body mass index (weight in kg/(height in m)^2<br />
+`BD2`: Blood Work Result-4 (mu U/ml)<br />
+`Age`: patients age (years)<br />
+`Insurance`: If a patient holds a valid insurance card<br />
+`Sepsis`: Positive: if a patient in ICU will develop a sepsis , and Negative: otherwis<br />
 
 
 ## Screenshot of Deployed App
