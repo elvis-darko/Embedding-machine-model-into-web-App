@@ -1,5 +1,5 @@
 ## Description 
- In this project, I create a machine learning model from [sepsis dataset](https://www.kaggle.com/datasets/chaunguynnghunh/sepsis?select=README.md). Also, I will create an API that will integrate the ML model using FastAPI. The App will interact with the model to classify the sepsis illness. Finally, I will containerize my application with a docker.
+ In this project, I create a machine learning model from the [sepsis dataset](https://www.kaggle.com/datasets/chaunguynnghunh/sepsis?select=README.md). Also, I will create an API that will integrate the ML model using FastAPI. The App will interact with the model to classify the sepsis illness. Finally, I will containerize my application with a docker.
 
 
 [![python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
@@ -10,6 +10,20 @@
 | Code      | Name        | Published Article |  Deployed App |
 |-----------|-------------|:-------------|:------|
 | P 6     | Embedding ML model into web application| Medium<br />LinkedIn| |
+
+## Note on Data
+This is a summary of the information contained in the data
+`ID`: number to represent patient ID
+`PRG`: Plasma glucose
+`PL`: Blood Work Result-1 (mu U/ml)
+`PR`: Blood Pressure (mm Hg)
+`SK`: Blood Work Result-2 (mm)
+`TS`: Blood Work Result-3 (mu U/ml)
+`M11`: Body mass index (weight in kg/(height in m)^2
+`BD2`: Blood Work Result-4 (mu U/ml)
+`Age`: patients age (years)
+`Insurance`: If a patient holds a valid insurance card
+`Sepsis`: Positive: if a patient in ICU will develop a sepsis , and Negative: otherwis
 
 
 ## Screenshot of Deployed App
