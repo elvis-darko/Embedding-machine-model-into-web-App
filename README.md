@@ -12,7 +12,7 @@
 | P 6     | Embedding ML model into web application| Medium<br />LinkedIn| |
 
 ## Note on Data
-This is a summary of the information contained in the data
+This is a summary of the information contained in the data<br />
 `ID`: number to represent patient ID<br />
 `PRG`: Plasma glucose<br />
 `PL`: Blood Work Result-1 (mu U/ml)<br />
