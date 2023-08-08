@@ -86,4 +86,4 @@ Here are some ressources you would read to have a good understanding of FastAPI 
 
 
 ## Author
-Elvis Darko
+[Elvis Darko](https://www.linkedin.com/in/elvis-darko/)
