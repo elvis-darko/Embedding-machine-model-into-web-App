@@ -22,7 +22,7 @@ This is a summary of the information contained in the data<br />
 `M11`: Body mass index (weight in kg/(height in m)^2<br />
 `BD2`: Blood Work Result-4 (mu U/ml)<br />
 `Age`: patients age (years)<br />
-`Insurance`: If a patient holds a valid insurance card<br />
+`Insurance`: If a patient holds a valid insurance card. **0**: Patient without insurance, and **1**: Patient with insurance<br />
 `Sepsis`: **Positive**: if a patient in ICU will develop a sepsis , and **Negative**: otherwis<br />
 
 
