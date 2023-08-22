@@ -50,3 +50,59 @@ def main():
     image_url = "https://lh3.googleusercontent.com/-UU_-cM2FZnI/YLgc3z-EFCI/AAAAAAAAAuo/sORie7aJNgsM8UY7_qAUTZUSeSxKtA7UQCLcBGAsYHQ/s16000/streamlit_log.png"
     st.markdown(f'<img src="{image_url}" alt="Streamlit Logo" style="width: 300px;">', unsafe_allow_html=True)
 
+
+
+# How to use
+    st.sidebar.title('How to Use')
+    st.sidebar.markdown('Follow these steps to predict sepsis:')
+    st.sidebar.markdown('1. Enter the patient\'s medical data on the left sidebar.')
+    st.sidebar.markdown('2. Click the "Predict" button to analyze the patient\'s condition.')
+    st.sidebar.markdown('3. Wait for the app to process the information.')
+    st.sidebar.markdown('4. View the prediction result and the likelihood of sepsis.')
+    st.sidebar.markdown('5. Interpret the result: "Positive" indicates sepsis, and "Negative" means no sepsis.')
+    st.sidebar.markdown('6. Check the probability bars for the likelihood of sepsis.')
+    #st.sidebar.markdown('7. If feature importance is available, view the impact of each input on the prediction.')
+  
+    st.sidebar.title('Input Parameters')
+
+    # Input parameter explanations
+
+    # Plasma Glucose - Slider
+    st.sidebar.markdown('**PRG:** Plasma Glucose')
+    PRG = st.sidebar.slider('PRG', min_value=0.0, max_value=200.0, value=100.0)
+
+    # Blood Work Result 1 - Text Input
+    st.sidebar.markdown('**PL:** Blood Work Result 1')
+    PL = st.sidebar.number_input('PL', value=0.0)
+
+    # Blood Pressure Measured - Slider
+    st.sidebar.markdown('**PR:** Blood Pressure Measured')
+    PR = st.sidebar.slider('PR', min_value=60, max_value=180, value=120)
+
+    # Blood Work Result 2 - Text Input
+    st.sidebar.markdown('**SK:** Blood Work Result 2')
+    SK = st.sidebar.number_input('SK', value=0.0)
+
+    # Blood Work Result 3 - Slider
+    st.sidebar.markdown('**TS:** Blood Work Result 3')
+    TS = st.sidebar.slider('TS', min_value=0.0, max_value=100.0, value=50.0)
+
+    # BMI - Text Input
+    st.sidebar.markdown('**M11:** BMI')
+    M11 = st.sidebar.number_input('M11', value=0.0)
+
+    # Blood Work Result 4 - Slider
+    st.sidebar.markdown('**BD2:** Blood Work Result 4')
+    BD2 = st.sidebar.slider('BD2', min_value=0.0, max_value=10.0, value=5.0)
+
+    # Age of the Patient - Slider
+    st.sidebar.markdown('**Age:** What is the Age of the Patient: ')
+    Age = st.sidebar.slider('Age', min_value=0, max_value=120, value=30)
+
+    # Insurance - Radio Buttons
+    st.sidebar.markdown('**Insurance:** Does the patient have Insurance?')
+    insurance_options = {0: 'NO', 1: 'YES'}
+    Insurance = st.sidebar.radio('Insurance', list(insurance_options.keys()), format_func=lambda x: insurance_options[x])
+
+    input_data = [[PRG, PL, PR, SK, TS, M11, BD2, Age, Insurance]]
+
