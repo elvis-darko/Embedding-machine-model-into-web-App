@@ -36,3 +36,38 @@ def preprocess_input_data(input_data):
     input_data_imputed_num = num_imputer.transform(input_data_df[num_columns])
     input_scaled_df = pd.DataFrame(scaler.transform(input_data_imputed_num), columns=num_columns)
     return input_scaled_df
+
+
+@app.get("/")
+def read_root():
+    return "Sepsis Prediction App"
+
+@app.post("/sepsis/predict")
+def predict_sepsis_endpoint(data: PatientData):
+    input_data = data.dict()
+    input_scaled_df = preprocess_input_data(input_data)
+    
+    probabilities = model.predict_proba(input_scaled_df)[0]
+    prediction = np.argmax(probabilities)
+
+    sepsis_status = "Positive" if prediction == 1 else "Negative"
+    probability = probabilities[1] if prediction == 1 else probabilities[0]
+
+    if prediction == 1:
+        status_icon = "✔"
+        sepsis_explanation = "Sepsis is a life-threatening condition caused by an infection. A positive prediction suggests that the patient might be exhibiting sepsis symptoms and requires immediate medical attention."
+    else:
+        status_icon = "✘"
+        sepsis_explanation = "Sepsis is a life-threatening condition caused by an infection. A negative prediction suggests that the patient is not currently exhibiting sepsis symptoms."
+
+    statement = f"The patient's sepsis status is {sepsis_status} {status_icon} with a probability of {probability:.2f}. {sepsis_explanation}"
+
+    user_input_statement = "Please note this is the user-inputted data: "
+    output_df = pd.DataFrame([input_data])
+
+    result = {'predicted_sepsis': sepsis_status, 'statement': statement, 'user_input_statement': user_input_statement, 'input_data_df': output_df.to_dict('records')}
+    return result
+if __name__ == "__main__":
+    import uvicorn
+
+    uvicorn.run("main:app", host="0.0.0.0", port=8080, reload=True)
