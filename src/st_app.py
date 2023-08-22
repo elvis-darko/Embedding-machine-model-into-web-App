@@ -106,3 +106,29 @@ def main():
 
     input_data = [[PRG, PL, PR, SK, TS, M11, BD2, Age, Insurance]]
 
+    if st.sidebar.button('Predict'):
+        with st.spinner("Predicting..."):
+            # Simulate a long-running process
+            progress_bar = st.progress(0)
+            for i in range(100):
+                time.sleep(0.1)
+                progress_bar.progress(i + 1)
+
+            output_df, probabilities = predict_sepsis(input_data)
+
+            st.subheader('Prediction Result')
+            st.write(output_df)
+
+            # Plot the probabilities as a pie chart with black and red colors
+            fig, ax = plt.subplots()
+            colors = ['#FF0000', '#000000']  # Red and Black colors
+            ax.pie(probabilities, labels=['Negative', 'Positive'], autopct='%1.1f%%', startangle=90, colors=colors)
+            ax.set_title('Sepsis Prediction Probabilities')
+            st.pyplot(fig)
+                          
+if __name__ == '__main__':
+    main()
+
+
+
+
