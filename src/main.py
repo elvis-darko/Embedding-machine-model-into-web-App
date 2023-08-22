@@ -28,3 +28,11 @@ class PatientData(BaseModel):
     BD2: float
     Age: float
     Insurance: int
+
+
+def preprocess_input_data(input_data):
+    input_data_df = pd.DataFrame([input_data])
+    num_columns = [col for col in input_data_df.columns if input_data_df[col].dtype != 'object']
+    input_data_imputed_num = num_imputer.transform(input_data_df[num_columns])
+    input_scaled_df = pd.DataFrame(scaler.transform(input_data_imputed_num), columns=num_columns)
+    return input_scaled_df
