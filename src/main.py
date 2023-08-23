@@ -9,11 +9,12 @@ from fastapi.responses import JSONResponse
 app = FastAPI()
 
 
-# Load the  scaler, and model
+# Load the  scaler and model
+imputer_filepath = "/com.docker.devenvironments.code/ML components/imputer.joblib"
 scaler_filepath = "/com.docker.devenvironments.code/ML components/scaler.joblib"
 model_filepath = "/com.docker.devenvironments.code/ML components/sepssis_predict.joblib"
 
-
+imputer = joblib.load(imputer_filepath)
 scaler = joblib.load(scaler_filepath)
 model = joblib.load(model_filepath)
 
@@ -31,8 +32,8 @@ class PatientData(BaseModel):
 
 def preprocess_input_data(input_data):
     input_data_df = pd.DataFrame([input_data])
-    num_columns = [col for col in input_data_df.columns if input_data_df[col].dtype != 'object']
-    input_data_imputed_num = num_imputer.transform(input_data_df[num_columns])
+    num_columns = [col for col in input_data_df.columns if input_data_df[col].dtype != "object"]
+    input_data_imputed_num = imputer.transform(input_data_df[num_columns])
     input_scaled_df = pd.DataFrame(scaler.transform(input_data_imputed_num), columns=num_columns)
     return input_scaled_df
 
