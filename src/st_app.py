@@ -7,15 +7,15 @@ import os
 import pickle
 
 # Load the numerical imputer
-imputer_filepath = "C://Users//elvis_d//DATA_ANALYTICS//GITHUB//EMBEDDING ML MODEL IN WEB APP//Embedding-machine-model-into-web-App//ML components//imputer.joblib"
+imputer_filepath = "C:\\Users\\elvis_d\\DATA_ANALYTICS\\DATA_ANALYTICS_TRAINING\\PROJECT_PHASE\\PROJECT_6\\dataset and notebook\\imputer.joblib"
 imputer = joblib.load(imputer_filepath)
 
 # Load the scaler
-scaler_filepath = "C://Users//elvis_d//DATA_ANALYTICS//GITHUB//EMBEDDING ML MODEL IN WEB APP//Embedding-machine-model-into-web-App//ML components//scaler.joblb"
+scaler_filepath = "C:\\Users\\elvis_d\\DATA_ANALYTICS\\DATA_ANALYTICS_TRAINING\\PROJECT_PHASE\\PROJECT_6\\dataset and notebook\\scaler.joblib"
 scaler = joblib.load(scaler_filepath)
 
 # Load the Random Forest model
-model_filepath = "C://Users//elvis_d//DATA_ANALYTICS//GITHUB//EMBEDDING ML MODEL IN WEB APP//Embedding-machine-model-into-web-App//ML components//sepssis_predict.joblib"
+model_filepath = "C:\\Users\\elvis_d\\DATA_ANALYTICS\\DATA_ANALYTICS_TRAINING\\PROJECT_PHASE\\PROJECT_6\\dataset and notebook\\sepssis_predict.joblib"
 model = joblib.load(model_filepath)
 
 # Define a function to preprocess the input data
