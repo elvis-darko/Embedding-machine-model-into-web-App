@@ -9,12 +9,11 @@ from fastapi.responses import JSONResponse
 app = FastAPI()
 
 
-# Load the numerical imputer, scaler, and model
-num_imputer_filepath = "/com.docker.devenvironments.code/project_directory/ML components/numerical_imputer.joblib"
-scaler_filepath = "/com.docker.devenvironments.code/project_directory/ML components/scaler.joblib"
-model_filepath = "/com.docker.devenvironments.code/project_directory/ML components/rf_model.joblib"
+# Load the  scaler, and model
+scaler_filepath = "/com.docker.devenvironments.code/ML components/scaler.joblib"
+model_filepath = "/com.docker.devenvironments.code/ML components/sepssis_predict.joblib"
 
-num_imputer = joblib.load(num_imputer_filepath)
+
 scaler = joblib.load(scaler_filepath)
 model = joblib.load(model_filepath)
 
