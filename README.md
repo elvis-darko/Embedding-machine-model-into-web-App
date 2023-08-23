@@ -1,5 +1,9 @@
 ## Description 
- In this project, I create a machine learning model from the [sepsis dataset](https://www.kaggle.com/datasets/chaunguynnghunh/sepsis?select=README.md). Also, I will create an API that will integrate the ML model using FastAPI. The App will interact with the model to classify the sepsis illness. Finally, I will containerize my application with a docker.
+ Sepsis, a life-threatening condition arising from infection, poses a significant global healthcare challenge. To better comprehend sepsis occurrence, researchers are turning to patient data analysis for uncovering hidden patterns and predictors. By harnessing advanced data analytics techniques and exploring diverse parameters such as vital signs, medical history, and demographic information, we aim to identify early warning signs and risk factors for sepsis development. This knowledge holds immense potential for developing risk stratification models, early detection systems, and targeted interventions, ultimately leading to improved patient outcomes and optimized sepsis management protocols.
+ <br />
+In this project, I create a machine learning model from the [sepsis dataset](https://www.kaggle.com/datasets/chaunguynnghunh/sepsis?select=README.md).
+ <br />
+ Also, I will create an API that will integrate the ML model using FastAPI. The App will interact with the model to classify the sepsis illness. Finally, I will containerize my application with a docker.
 
 
 [![python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
