@@ -1,9 +1,18 @@
-## Description 
- Sepsis, a life-threatening condition arising from infection, poses a significant global healthcare challenge. To better comprehend sepsis occurrence, researchers are turning to patient data analysis for uncovering hidden patterns and predictors. By harnessing advanced data analytics techniques and exploring diverse parameters such as vital signs, medical history, and demographic information, we aim to identify early warning signs and risk factors for sepsis development. This knowledge holds immense potential for developing risk stratification models, early detection systems, and targeted interventions, ultimately leading to improved patient outcomes and optimized sepsis management protocols.
- <br />
-In this project, I create a machine learning model from the [sepsis dataset](https://www.kaggle.com/datasets/chaunguynnghunh/sepsis?select=README.md).
- <br />
- Also, I will create an API that will integrate the ML model using FastAPI. The App will interact with the model to classify the sepsis illness. Finally, I will containerize my application with a docker.
+## Project Description 
+![sepsis](https://scirc.med.ufl.edu/files/2019/11/GettyImages-1076118668-600x400.jpg)
+ Sepsis, a life-threatening condition arising from infection, poses a significant global healthcare challenge. To better comprehend sepsis occurrence, researchers are turning to patient data analysis for uncovering hidden patterns and predictors. 
+ 
+ By harnessing advanced data analytics techniques and exploring diverse parameters such as vital signs, medical history, and demographic information, this project aims to identify early warning signs and risk factors for sepsis development. This knowledge holds immense potential for developing risk stratification models, early detection systems, and targeted interventions, ultimately leading to improved patient outcomes and optimized sepsis management protocols.
+
+ The focus lies on creating a robust system that can accurately detect and classify sepsis cases, enabling healthcare providers to respond promptly and effectively to this life-threatening condition.
+ 
+
+ ## Project Objectives
+ - create a machine learning model from the [sepsis dataset](https://www.kaggle.com/datasets/chaunguynnghunh/sepsis?select=README.md) that predicts whether a pateint has sepssis or not.  
+
+ - Implement the FastAPI framework to create a user-friendly and efficient web interface for healthcare professionals to interact with the sepsis classification model.
+
+ - Containerize the app with a docker
 
 
 [![python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
