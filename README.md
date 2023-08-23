@@ -9,7 +9,7 @@
  
 
  ## Project Objectives
- - create a machine learning model from the [sepsis dataset](https://www.kaggle.com/datasets/chaunguynnghunh/sepsis?select=README.md) that predicts whether a pateint has sepssis or not.  
+ - Create a machine learning model from the [sepsis dataset](https://www.kaggle.com/datasets/chaunguynnghunh/sepsis?select=README.md) that predicts whether a pateint has sepssis or not.  
 
  - Implement the FastAPI framework to create a user-friendly and efficient web interface for healthcare professionals to interact with the sepsis classification model.
 
