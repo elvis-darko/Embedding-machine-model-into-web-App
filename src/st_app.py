@@ -6,15 +6,15 @@ import time
 import os 
 
 # Load the numerical imputer
-num_imputer_filepath = "D:/Projects/Sepsis Classification/ML components/numerical_imputer.joblib"
-num_imputer = joblib.load(num_imputer_filepath)
+imputer_filepath = "https://1drv.ms/u/s!Aqe0ZlYhhcZygTnd1yHHjsAjNThn?e=Et9l14"
+imputer = joblib.load(imputer_filepath)
 
 # Load the scaler
-scaler_filepath = "D:/Projects/Sepsis Classification/ML components/scaler.joblib"
+scaler_filepath = "https://1drv.ms/u/s!Aqe0ZlYhhcZygTYja5hXBDGbMcqa?e=phK1OU"
 scaler = joblib.load(scaler_filepath)
 
 # Load the Random Forest model
-model_filepath = "D:/Projects/Sepsis Classification/ML components/rf_model.joblib"
+model_filepath = "https://1drv.ms/u/s!Aqe0ZlYhhcZygTf4TIiG2jnTXF8x?e=n8Xblk"
 model = joblib.load(model_filepath)
 
 # Define a function to preprocess the input data
