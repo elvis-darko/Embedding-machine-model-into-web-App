@@ -4,24 +4,24 @@ import joblib
 import matplotlib.pyplot as plt
 import time
 import os 
+import pickle
 
 # Load the numerical imputer
-imputer_filepath = "C:\\Users\\elvis_d\\DATA_ANALYTICS\GITHUB\\EMBEDDING ML MODEL IN WEB APP\\Embedding-machine-model-into-web-App\\ML components\\imputer.joblib"
+imputer_filepath = "C://Users//elvis_d//DATA_ANALYTICS//GITHUB//EMBEDDING ML MODEL IN WEB APP//Embedding-machine-model-into-web-App//ML components//imputer.joblib"
 imputer = joblib.load(imputer_filepath)
 
 # Load the scaler
-scaler_filepath = "C:\\Users\\elvis_d\\DATA_ANALYTICS\GITHUB\\EMBEDDING ML MODEL IN WEB APP\\Embedding-machine-model-into-web-App\\ML components\\scaler.joblb"
+scaler_filepath = "C://Users//elvis_d//DATA_ANALYTICS//GITHUB//EMBEDDING ML MODEL IN WEB APP//Embedding-machine-model-into-web-App//ML components//scaler.joblb"
 scaler = joblib.load(scaler_filepath)
 
 # Load the Random Forest model
-model_filepath = "C:\\Users\\elvis_d\\DATA_ANALYTICS\GITHUB\\EMBEDDING ML MODEL IN WEB APP\\Embedding-machine-model-into-web-App\\ML components\\sepssis_predict.joblib"
+model_filepath = "C://Users//elvis_d//DATA_ANALYTICS//GITHUB//EMBEDDING ML MODEL IN WEB APP//Embedding-machine-model-into-web-App//ML components//sepssis_predict.joblib"
 model = joblib.load(model_filepath)
 
 # Define a function to preprocess the input data
 def preprocess_input_data(input_data):
     input_data_df = pd.DataFrame(input_data, columns=['PRG', 'PL', 'PR', 'SK', 'TS', 'M11', 'BD2', 'Age', 'Insurance'])
     num_columns = input_data_df.select_dtypes(include='number').columns
-
     input_data_imputed_num = imputer.transform(input_data_df[num_columns])
     input_scaled_df = pd.DataFrame(scaler.transform(input_data_imputed_num), columns=num_columns)
 
