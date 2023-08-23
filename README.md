@@ -1,5 +1,6 @@
 ## Project Description 
 ![sepsis](https://scirc.med.ufl.edu/files/2019/11/GettyImages-1076118668-600x400.jpg)
+ 
  Sepsis, a life-threatening condition arising from infection, poses a significant global healthcare challenge. To better comprehend sepsis occurrence, researchers are turning to patient data analysis for uncovering hidden patterns and predictors. 
  
  By harnessing advanced data analytics techniques and exploring diverse parameters such as vital signs, medical history, and demographic information, this project aims to identify early warning signs and risk factors for sepsis development. This knowledge holds immense potential for developing risk stratification models, early detection systems, and targeted interventions, ultimately leading to improved patient outcomes and optimized sepsis management protocols.
