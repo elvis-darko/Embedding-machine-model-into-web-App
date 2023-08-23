@@ -76,16 +76,20 @@ The both long command-lines have a same structure, they pipe multiple commands u
     
     - Demo
 
-          uvicorn src.demo_01.api:app --reload 
+          uvicorn src.demo_01.api:main --reload 
 
-    <!-- - Salary prediction
-
-          uvicorn src.salary.api:app --reload  -->
 
 
   - Go to your browser at the following address, to explore the api's documentation :
         
       http://127.0.0.1:8000/docs
+
+## Run Streamlit App
+A streamlit app was added for further exploration of the model. The streamlit app provides a simple Graphic User Interface where predicitons can be made from inputs.
+
+- Run the demo app (being at the root of the repository):
+        
+        Streamlit run st_app.py
 
 
 ## Resources
