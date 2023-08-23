@@ -44,7 +44,7 @@ def read_root():
 
 @app.post("/sepsis/predict")
 def predict_sepsis_endpoint(data: PatientData):
-    input_data = data.dict()
+    input_data = data.model_dump()
     input_scaled_df = preprocess_input_data(input_data)
     
     probabilities = model.predict_proba(input_scaled_df)[0]
